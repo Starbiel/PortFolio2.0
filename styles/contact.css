@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#container {
+    background-color: black;
+    width: 100vw;
+    height: 87.8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container > div > div {
+    display: flex;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid red;
+    margin-top: 3%;
+    border-radius: 10px;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#container > div > div > a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+#container > div > div > i {
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+}

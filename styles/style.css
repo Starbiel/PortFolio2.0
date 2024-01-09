@@ -58,9 +58,9 @@ p {
         margin: auto;
         width: 90vw;
         height: 43.9vh;
-        border-bottom: 1px solid white;
     }
     #photo {
+        border-top: 1px solid white;
         margin: auto;
         width: 43.9vw;
         height: 33.9vh;

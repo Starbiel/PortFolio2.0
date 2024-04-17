@@ -16,13 +16,11 @@
     justify-content: center;
 }
 
-p {
-
+#text-about > p {
     color: rgb(224, 224, 224);
     font-size: 140%;
     text-align: justify;
     text-justify: inter-word;
-    height: 60%;
     letter-spacing: 2px;
 }
 
@@ -40,11 +38,14 @@ p {
     background-size: cover;
     border-radius: 50%;
     background-color: rgb(0, 0, 0);
-    height: 50%;
-    box-shadow: 10px 10px 2px 2px rgb(170, 170, 170);
+    aspect-ratio: 1/1;
+    box-shadow: 0 5px 10px rgb(183 183 183 / 33%);
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1400px) {
+    #photo-back {
+        width: 80%;
+    }
     p {
         font-size: 120%;
     }
@@ -64,6 +65,9 @@ p {
         margin: auto;
         width: 43.9vw;
         height: 33.9vh;
+    }
+    #photo-back {
+        width: 70%;
     }
     p{
         font-size: 100%;

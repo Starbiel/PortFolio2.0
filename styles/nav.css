@@ -10,27 +10,36 @@
     height: 8vh;
     background-color: black;
     border-bottom: 3px solid red;
+    align-items: center;
+    display: flex;
 }
 
 nav {
     position: relative;
-    top: 40%;
+    width: 100vw;
 }
 
 #options {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
-a {
+#about {
+    position: relative;
+}
+
+li > a, li > p {
     text-decoration: none;  
     color: rgb(247, 127, 127);
     font-size: 1.3em;
     transition: font-size .5s ease;
 }
 
-a:hover {
+li > a:hover, li > p:hover  {
+    cursor: pointer;
     color: rgb(255, 255, 255);
     font-size: 1.6em;
 }
@@ -49,4 +58,58 @@ h1 {
     text-align: center;
     background-color: black;
     color: white;
+}
+
+#moreOptionsAbout {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 46%;
+    margin: auto;
+    background-color: white;
+    opacity: 0;
+    width: 20%;
+    align-items: start;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+#moreOptionsAbout > a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    transition: font-size .5s ease;
+}
+
+#moreOptionsAbout > a:hover {
+    cursor: pointer;
+    color: rgb(247, 127, 127);
+    font-size: 1.5em;
+}
+
+.toggle {
+    animation: dropdownAnimation 0.6s ease forwards, opacity 0.6s;
+}
+
+.toggleOff {
+    animation-direction: reverse;
+    animation: dropdownAnimation 0.6s ease forwards, opacity 0.6s;
+}
+
+@keyframes dropdownAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(-8px); 
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+@media only screen and (max-width: 800px) {
+    #moreOptionsAbout {
+        width: 80%;
+    }
 }

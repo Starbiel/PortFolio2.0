@@ -6,34 +6,73 @@
         <title>Bem-Vindo</title>
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/nav.css">
-        <script type="module" src="script.js" defer></script>
         <link rel="stylesheet" href="styles/basicStyle.css">
+        <script src="node_modules/swup" defer></script>
+        <script type="module" src="script.js" defer></script>
     </head>
     <body>
         <div id="nav-bar">
             <nav>
                 <ul id="options">
-                    <li><a href="index.html">Sobre</a></li>
+                    <li id="about">
+                        <p id="openMoreAbout">Sobre</p>
+                        <div id="moreOptionsAbout">
+                            <a href="index.html#aboutMe">Sobre Mim</a>
+                            <a href="index.html#tecs">Tecnologias</a>
+                            <a href="https://www.linkedin.com/in/gabriel-speranceta-40a993265/">Fim</a>
+                        </div>
+                    </li>
                     <li><a href="projects.html">Projeto</a></li>
                     <li><a href="contact.html">Contato</a></li>
                 </ul>
             </nav>
-        </div>  
+        </div>
         <main id="swup" class="transition-fade">
             <h1>Sobre Mim</h1>
             <div id="container">
-                <div id="text-about">
-                    <p id="text">
-                        Olá, meu nome é Gabriel Henrique Speranceta, tenho 19 anos e atualmente sou estudante da Universidade Federal do Paraná (UFPR). 
-                        Sou uma pessoa autodidata e tenho um grande interesse em programação e tecnologia desde muito jovem. Atualmente, tenho conhecimento 
-                        em várias linguagens, como HTML, CSS, JavaScript, C++, Python, Java e continuo aprendendo mais sobre essas áreas fascinantes. 
-                        Também tenho experiência em criar sites e programas, e estou sempre procurando maneiras de melhorar minhas habilidades e conhecimentos. 
-                        Estou animado para ver onde esses interesses me levarão e estou ansioso para continuar a explorar novos caminhos no mundo da tecnologia.
-                    </p>
-                </div>
-                <div id="photo">
-                    <div id="photo-back"></div>
-                </div>
+                <section id="aboutMe">
+                    <div id="text-about">
+                        <p id="firstName">Gabriel</p>
+                        <p id="secondName">Speranceta</p>
+                        <p id="text">
+                            Olá, meu nome é Gabriel Henrique Speranceta, tenho 19 anos e atualmente sou estudante da Universidade Federal do Paraná (UFPR). 
+                            Sou uma pessoa autodidata e tenho um grande interesse em programação e tecnologia desde muito jovem. Atualmente, tenho conhecimento 
+                            em várias linguagens, como HTML, CSS, JavaScript, C++, Python, Java e continuo aprendendo mais sobre essas áreas fascinantes. 
+                            Também tenho experiência em criar sites e programas, e estou sempre procurando maneiras de melhorar minhas habilidades e conhecimentos. 
+                            Estou animado para ver onde esses interesses me levarão e estou ansioso para continuar a explorar novos caminhos no mundo da tecnologia.
+                        </p>
+                    </div>
+                    <div id="photo">
+                        <div id="photo-back"></div>
+                    </div>
+                </section>
+                <h2>Tecnologias que trabalho</h2>
+                <section id="tecs">
+                    <div id="advanced">
+                        <h3>Avançado</h3>
+                        <ul>
+                            <li>Tecnologia 1</li>
+                            <li>Tecnologia 2</li>
+                            <li>Tecnologia 3</li>
+                        </ul>
+                    </div>
+                    <div id="intermediate">
+                        <h3>Intermediário</h3>
+                        <ul>
+                            <li>Tecnologia 4</li>
+                            <li>Tecnologia 5</li>
+                            <li>Tecnologia 6</li>
+                        </ul>
+                    </div>
+                    <div id="basic">
+                        <h3>Básico</h3>
+                        <ul>
+                            <li>Tecnologia 7</li>
+                            <li>Tecnologia 8</li>
+                            <li>Tecnologia 9</li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </main>
     </body>

@@ -21,37 +21,6 @@ p:hover, .tec > img:hover  {
     text-shadow: 2px 2px 4px rgba(92, 92, 92, 0.712);
 }
 
-
-.card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgb(183 183 183 / 33%);
-    padding: 20px 15px 20px 15px;
-    margin: auto;
-    transition: transform 0.5s;
-    color: black;
-    width: 24%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.card > label {
-    text-align: justify;
-    font-family: Arial, sans-serif;
-    font-size: 17px;
-    line-height: 1.5;
-}
-
-.card > a:hover {
-    color: black;
-    font-size: 1.5em;
-}
-
-.card > h4 {
-    margin-top: 10px;
-}
 .tec {
     display: flex;
     justify-content: space-between;

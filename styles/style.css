@@ -1,13 +1,35 @@
-
-
 #container {
-    max-width: 100vw;
+    background-color: black;
+    width: 100vw;
+    height: 87.8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+main > h1 {
+    background-color: rgb(24, 24, 24);
+}
+
+section {
+    max-width: 100%;
     background-color: black;
     height: 87.8vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    z-index: 0;
 }
+
+#aboutMe {
+    background-color: rgb(24, 24, 24);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0 1px 4px rgba(226, 226, 226, 0.33);
+    margin-bottom: 20px;
+}
+
 
 #text-about {
     width: 45vw;
@@ -16,12 +38,33 @@
     justify-content: center;
 }
 
-#text-about > p {
+#text {
     color: rgb(224, 224, 224);
-    font-size: 140%;
     text-align: justify;
+    font-size: 120%;
     text-justify: inter-word;
     letter-spacing: 2px;
+}
+
+#firstName {
+    color: rgb(247, 127, 127);
+    font-size: 400%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#secondName {
+    text-align: center;
+    color: rgb(247, 127, 127);
+    font-size: 300%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+#text:hover {
+    transform: scale(1);
+    box-shadow: 0;
 }
 
 #photo {
@@ -42,6 +85,17 @@
     box-shadow: 0 5px 10px rgb(183 183 183 / 33%);
 }
 
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#tecs {
+    color: white;
+}
+
+
 @media only screen and (max-width: 1400px) {
     #photo-back {
         width: 80%;
@@ -53,18 +107,27 @@
 
 @media only screen and (max-width: 800px) {
     #container {
+        height: 100%;
+    }
+    section {
+        height: 100%;
         flex-direction: column;
+    }
+    #aboutMe {
+        padding-bottom: 0;
+        flex-direction: column-reverse;
     }
     #text-about {
         margin: auto;
         width: 90vw;
-        height: 43.9vh;
+        padding-bottom: 20px;
+        border-bottom: 1px solid white;
     }
     #photo {
-        border-top: 1px solid white;
         margin: auto;
-        width: 43.9vw;
-        height: 33.9vh;
+        margin-top: 10px;
+        width: 83.9vw;
+        aspect-ratio: 1/1;
     }
     #photo-back {
         width: 70%;

@@ -48,3 +48,17 @@ a:hover {
     transform: scale(1.05);
     box-shadow: 2px 2px 20px 5px rgba(134, 134, 134, 0.54);
 }
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .card {
+        width: 80%;
+    }
+    iframe {
+        width: 99%;
+        aspect-ratio: 4/1;
+    }
+}

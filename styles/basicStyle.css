@@ -11,13 +11,7 @@ main {
     background-color: black;
 }
 
-
-p {
-    transition: transform 0.5s;
-}
-
-p:hover, .tec > img:hover  {
-    transform: scale(1.05);
+p:hover, .tec > div > img:hover  {
     text-shadow: 2px 2px 4px rgba(92, 92, 92, 0.712);
 }
 

@@ -1,11 +1,8 @@
 #container {
     background-color: black;
-    width: 100vw;
-    height: 87.8vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    overflow: hidden;
 }
 
 main > h1 {
@@ -15,7 +12,6 @@ main > h1 {
 section {
     max-width: 100%;
     background-color: black;
-    height: 87.8vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -28,6 +24,7 @@ section {
     padding-bottom: 50px;
     box-shadow: 0 1px 4px rgba(226, 226, 226, 0.33);
     margin-bottom: 20px;
+    height: 70vh;
 }
 
 
@@ -51,6 +48,7 @@ section {
     font-size: 400%;
     text-align: center;
     margin-bottom: 10px;
+    transition: transform 0.5s;
 }
 
 #secondName {
@@ -60,8 +58,12 @@ section {
     text-align: center;
     margin-bottom: 10px;
     margin-left: 100px;
+    transition: transform 0.5s;
 }
 
+#firstName:hover, #secondName:hover {
+    transform: scale(1.1);
+}
 #text:hover {
     transform: scale(1);
     box-shadow: 0;
@@ -88,13 +90,57 @@ section {
 h2 {
     color: white;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #tecs {
     color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
+.singleTec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 30%;
+    box-shadow: 0 3px 10px rgba(228, 227, 227, 0.33);
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 30px;
+    margin-top: -25px;
+}
+
+.singleTec > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    margin-bottom: 20px;
+}
+
+.singleTec > div > img {
+    width: 80px;
+    aspect-ratio: 1/1;
+    margin-right: 10px;
+}
+
+.singleTec > p {
+    color: white;
+    text-align: justify;
+    font-size: 120%;
+    letter-spacing: 1.5px;
+}
+
+.singleTec:nth-child(odd) {
+    margin-left: 5%;
+}
+
+.singleTec:nth-child(even)  {
+    margin-left: 40%;
+}
 
 @media only screen and (max-width: 1400px) {
     #photo-back {
@@ -103,6 +149,7 @@ h2 {
     p {
         font-size: 120%;
     }
+    
 } 
 
 @media only screen and (max-width: 800px) {
@@ -114,6 +161,7 @@ h2 {
         flex-direction: column;
     }
     #aboutMe {
+        height: initial;
         padding-bottom: 0;
         flex-direction: column-reverse;
     }
@@ -134,5 +182,19 @@ h2 {
     }
     p{
         font-size: 100%;
+    }
+    #tecs {
+    }
+    .singleTec {
+        width: 80%;
+        margin: auto;
+    }
+    .singleTec:nth-child(odd) {
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .singleTec:nth-child(even)  {
+        margin: auto;
+        margin-bottom: 40px;
     }
   }

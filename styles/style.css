@@ -84,7 +84,8 @@ section {
     border-radius: 50%;
     background-color: rgb(0, 0, 0);
     aspect-ratio: 1/1;
-    box-shadow: 0 5px 10px rgb(183 183 183 / 33%);
+    box-shadow: 0 5px 10px 5px rgba(255, 255, 255, 0.33);
+    filter: grayscale(100%);
 }
 
 h2 {
@@ -96,7 +97,7 @@ h2 {
 #tecs {
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100%;
 }
 
@@ -182,8 +183,6 @@ h2 {
     }
     p{
         font-size: 100%;
-    }
-    #tecs {
     }
     .singleTec {
         width: 80%;

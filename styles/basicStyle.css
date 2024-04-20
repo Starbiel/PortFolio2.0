@@ -9,6 +9,7 @@ html.is-animating .transition-fade {
 
 main {
     background-color: black;
+    padding-top: 8.4vh;
 }
 
 p:hover, .tec > div > img:hover  {
@@ -29,4 +30,10 @@ p:hover, .tec > div > img:hover  {
     width: 18%;
     aspect-ratio: 1/1;
     transition: transform 0.5s;
+}
+
+@media (max-width: 1024px) {
+    main {
+        padding-top: 8vh;
+    }
 }

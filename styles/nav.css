@@ -12,6 +12,8 @@
     border-bottom: 3px solid red;
     align-items: center;
     display: flex;
+    position: fixed;
+    z-index: 2;
 }
 
 nav {
